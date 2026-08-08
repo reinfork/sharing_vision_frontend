@@ -1,43 +1,42 @@
+# Sharing Vision Frontend
 
-# Sharing Vision Backend
+**Live Demo App:** 
 
-A backend app for post article. Used Golang (Gin) as framework.
-
+This is the frontend dashboard for the Sharing Vision Fullstack Engineer submission. It consumes the Golang microservice to perform CRUD operations on articles.
 
 ## Tech Stack
-
-**Language**: Golang (Gin)
-
-**ORM**: GORM
-
-**Database**: MySQL (hosted via aiven)
+* **Framework:** Vue 3 (Composition API)
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS v4
+* **HTTP Client:** Axios
 
 ## Prerequisites
 To run this project locally, you will need:
-* [Go](https://go.dev/dl/) installed (v1.18 or higher)
-* A MySQL server running locally or a cloud MySQL connection string
+* [Node.js](https://nodejs.org/) (v18 or higher)
+* npm, yarn, or pnpm
 
 ## How to Run Locally
 
-**Clone the repository:**
+1. **Clone the repository:**
+   
    ```bash
-   git clone [YOUR_BACKEND_REPO_URL]
-   cd [YOUR_BACKEND_FOLDER_NAME]
+   git clone [YOUR_FRONTEND_REPO_URL]
+   cd [YOUR_FRONTEND_FOLDER_NAME]
+   ``
+3. **Install Dependencies:**
+   
+   ```bash
+   npm install
    ```
-**Install Dependencies:**
-    
-    go mod tidy
+   
+4. Configure Env
 
-**Configure Env:**
+   ```bash
+   VITE_API_BASE_URL=http://localhost:8080
+   ```
 
-```bash
-DB_URL=***
-PORT=8080
-```
+5. Run
 
-**Run:**
-
-```bash
-go run main.go
-```
-
+   ```bash
+   npm run dev
+   ```
